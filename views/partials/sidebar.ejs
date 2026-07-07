@@ -1,0 +1,30 @@
+<div class="col-md-3">
+  <div class="card p-3 shadow-sm">
+
+    <h6 class="mb-3">Filter</h6>
+
+    <form method="GET" action="/products">
+
+  <!-- Category -->
+  <select name="category" class="form-select mb-2">
+    <option value="">All</option>
+    <option value="Clothing" <%= category === 'Clothing' ? 'selected' : '' %>>Clothing</option>
+    <option value="Electronics" <%= category === 'Electronics' ? 'selected' : '' %>>Electronics</option>
+  </select>
+
+  <!-- Size -->
+  <select name="size" class="form-select mb-2">
+    <option value="">All</option>
+    <option value="S" <%= size === 'S' ? 'selected' : '' %>>S</option>
+    <option value="M" <%= size === 'M' ? 'selected' : '' %>>M</option>
+    <option value="L" <%= size === 'L' ? 'selected' : '' %>>L</option>
+  </select>
+
+  <!-- Price -->
+  <input type="number" name="price" value="<%= price || '' %>" class="form-control mb-2" placeholder="Max Price">
+
+  <button class="btn btn-info w-50">Apply</button>
+</form>
+
+  </div>
+</div>

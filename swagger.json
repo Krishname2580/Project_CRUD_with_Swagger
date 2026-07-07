@@ -1,0 +1,26 @@
+{
+    "swaggerDefinition": {
+      "info": {
+        "title": "Test API",
+        "version": "1.0.0",
+        "description": "Student API documentation create by webskitters",
+        "contact": {
+          "name": "Krishna"
+        },
+        "servers": [
+          "http://localhost:5000"
+          
+        ]  
+      },
+      "tags": [
+        
+        
+    ],
+    "schemes": "['https', 'http']"
+      
+    },
+    "apis": [
+      "app.js",
+      "./app/routes/*.js"
+    ]
+  }
