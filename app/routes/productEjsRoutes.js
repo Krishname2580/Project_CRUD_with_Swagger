@@ -1,5 +1,5 @@
 const express = require('express')
-const ProductEjsController = require('../controller/ProductEjsController')
+const ProductEjsController = require('../controller/productEjsController')
 const multer = require('../utils/multer')
 const cloudinary = require('../utils/cloudinary')
 
